@@ -1,19 +1,11 @@
-﻿using System.Runtime.CompilerServices;
+﻿string[] strings = { "hello", "world", "2", "(.v.)", "12", "0" }; 
 
-void Main()
+
+foreach (string list in strings)
+
 {
-
-string [] massiv = {'Hello','2','world',':-)'};
-string str = "";
-
-
-foreach (string sim in massiv)
-
-if (str = massiv.Length <= 3)
-{
-System.Console.WriteLine(str);
+    if(strings.Length < 4)
+   Console.WriteLine(strings); 
+Console.ReadLine();
 }
 
-
-}
-Main();
