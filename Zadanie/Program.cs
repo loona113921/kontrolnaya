@@ -1,11 +1,31 @@
-﻿string[] strings = { "hello", "world", "2", "(.v.)", "12", "0" }; 
-
-
-foreach (string list in strings)
+﻿void Main()
 
 {
-    if(strings.Length < 4)
-   Console.WriteLine(strings); 
-Console.ReadLine();
-}
 
+﻿string[] array1 = new string[4] {"1234", "1567", "-2", "computer science"};
+string[] array2 = new string[array1.Length];
+void stringsArr2 (string[] array1, string[] array2)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+    if(array1[i].Length <= 3)
+        {
+        array2[count] = array1[i];
+        count++;
+        }
+    }
+}
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+stringsArr2(array1, array2);
+PrintArray(array2);
+
+}
+Main();
